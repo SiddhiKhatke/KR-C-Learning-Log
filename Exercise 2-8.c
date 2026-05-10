@@ -12,7 +12,8 @@ unsigned int rightrot(unsigned int x, int n)
         4.Shifting the extracted bits using left shift operator ((x&(~0U>>(s-n)))<<(s-n))
         5.Shifthing the bits of x by n position (x>>n)
         6.Replacing leftmost n bits of the result with the extracted rightmost bits of x using OR operator (x>>n)|((x&(~0U>>(s-n)))<<(s-n))
-
+    */
+    
     int s=sizeof(x)*CHAR_BIT;
     n=n%s;
     x=(x>>n)|((x&(~0U>>(s-n)))<<(s-n));
