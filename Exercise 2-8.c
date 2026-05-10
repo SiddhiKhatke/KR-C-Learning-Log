@@ -5,11 +5,18 @@
 
 unsigned int rightrot(unsigned int x, int n)
 {
+    /*
+        1.Toggle 0U to 1 (~0U)
+        2.Create a mask by shifting the bits to right such that only n 1s are left (~0U>>(s-n))
+        3.Extracting n bits from the right end using & operator (x&(~0U>>(s-n)))
+        4.Shifting the extracted bits using left shift operator ((x&(~0U>>(s-n)))<<(s-n))
+        5.Shifthing the bits of x by n position (x>>n)
+        6.Replacing leftmost n bits of the result with the extracted rightmost bits of x using OR operator (x>>n)|((x&(~0U>>(s-n)))<<(s-n))
+
     int s=sizeof(x)*CHAR_BIT;
     n=n%s;
-    x=(x>>n)|(x&(~0U>>(s-n)))<<(s-n);
-            /*(x&(~0U>>(s-n)))<<(s-n)*/
-
+    x=(x>>n)|((x&(~0U>>(s-n)))<<(s-n));
+    
     return x;
 }
 
