@@ -1,6 +1,12 @@
 # KR-C-Learning-Log
 Documenting my journey into Bare Metal programming and K&amp;R C exercises. Based in Pune, India.
 
+**Exercise 2-2**: Write a loop equivalent to the for loopof getliine program without using && or ||. 
+
+**Exercise 2-3**: Write a function htoi(s), which converts a string of hexadecimal digits
+(including an optional 0x or 0X) into its equivalent integer value. The allowable digits are 0
+through 9, a through f, and A through F.
+
 **Exercise 2-6**. Write a function setbits(x,p,n,y) that returns x with the n bits that begin at
 position p set to the rightmost n bits of y, leaving the other bits unchanged.
 
@@ -20,7 +26,3 @@ to the right by n positions.
 -The same value behaves differently depending on interpretation:
  8-bit view → 253 → 127 after rotation
  32-bit view → 253 → 1073741887 after rotation
-
-**Exercise 2-3**: Write a function htoi(s), which converts a string of hexadecimal digits
-(including an optional 0x or 0X) into its equivalent integer value. The allowable digits are 0
-through 9, a through f, and A through F.
