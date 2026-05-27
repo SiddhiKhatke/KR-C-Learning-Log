@@ -1,7 +1,7 @@
 # KR-C-Learning-Log
-Documenting my journey into Bare Metal programming and K&amp;R C exercises. Based in Pune, India.
+Documenting my journey into Bare Metal programming and K&R C exercises. Based in Pune, India.
 
-**Exercise 2-2**: Write a loop equivalent to the for loopof getliine program without using && or ||. 
+**Exercise 2-2**: Write a loop equivalent to the for loopof getline program without using && or ||. 
 
 **Exercise 2-3**: Write a function htoi(s), which converts a string of hexadecimal digits
 (including an optional 0x or 0X) into its equivalent integer value. The allowable digits are 0
