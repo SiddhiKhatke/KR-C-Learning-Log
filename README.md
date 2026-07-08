@@ -24,3 +24,7 @@ with a conditional expression instead of if-else.
 
 **Exercise 3-1**. Our binary search makes two tests inside the loop, when one would suffice (at
 the price of more tests outside.) Write a version with only one test inside the loop
+
+**Exercise 3-2**. Write a function escape(s,t) that converts characters like newline and tab into
+visible escape sequences like \n and \t as it copies the string t to s. Use a switch. Write a 
+function for the other direction as well, converting escape sequences into the real characters. 
